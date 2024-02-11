@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Photo Gallery</h1>
+        <div class="navbar">
+            <button  onclick="remove()" type="submit">Remove images</button>
+            <button onclick="applyFilter()" type="submit">Apply filter</button>
+            <button onclick="animateElement()" type="submit">Animate</button>
+            <button onclick="rotateElement()" type="submit">Rotate</button>
+        </div>
+
+        <div class="img-container">
+            <div class="one ">
+                <img src="./images/640px.jpg"  alt="Nature" class="full-img" width="640px" height="427px">
+            </div>
+            <div class="two ">
+                <img src="./images/ph2.jpg" class="mini-img" alt="Nature" width="310px" height="207px">
+            </div>
+            <div class="three ">
+                <img src="./images/ph1.jpg"  class="mini-img" alt="Nature" width="310px" height="207px">
+            </div>
+            <div class="four ">
+                <img src="./images/ph4.jpg"  class="mini-img" alt="Night"  height="203px">
+            </div>
+            <div class="five ">
+                <img src="./images/ph5.jpg"  class="mini-img" alt="Nature" height="203px">
+            </div>    
+            <div class="six ">
+                <img src="./images/photo6.jpg"  class="mini-img" alt="Nature" height="203px">
+            </div>
+        </div>
+        <div class="popup">
+            <span>&times;</span>
+            <img src="images/640px.jpg" alt="">
+        </div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
